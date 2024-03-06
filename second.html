@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text">Welcome to Computer Science!</h1>
+    <img id="pic" src="media/pic1.png" width="300" height="300" style="margin-left: 500px;">
+    <br>
+    <button type="button" onclick="ChangeImg()" style="margin-left: 555px;">Change Image</button>
+    <button type="button" onclick="RevImg()">Revert Image</button>
+
+    <script>
+        document.getElementById("text").style.textAlign = "center";
+
+        function ChangeImg(){
+            document.getElementById("pic").src = "media/pic2.png";
+        }
+
+        function RevImg(){
+            document.getElementById("pic").src = "media/pic1.png";
+        }
+        
+    </script>
+</body>
+</html>
